@@ -607,6 +607,9 @@ textarea {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+/* #########################################
+  Main page navigation menu
+###########################################*/
 #main-nav {
   position: relative;
   height: 80px;
@@ -634,8 +637,85 @@ textarea {
   color: #fff;
 }
 
+/* #########################################
+  Footer
+###########################################*/
 footer {
-  padding: 40;
+  color: white;
+  padding: 40px 5%;
+  background-color: #2a69d8;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer-container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+footer .footer-container .logo {
+  width: 180px;
+}
+footer .footer-container .top-footer {
+  padding-bottom: 35px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgba(155, 158, 184, 0.26);
+}
+footer .footer-container .lower-footer {
+  margin-top: 35px;
+}
+footer .footer-container .lower-footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+footer .footer-container .lower-footer .footer-menu .link-heading {
+  padding: 12px 0;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+footer .footer-container .lower-footer .footer-menu .footer-link {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  width: max-content;
+  color: #d4d6e4;
+}
+footer .footer-container .lower-footer .footer-menu .footer-link:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* #########################################
+  Circle Tabs
+###########################################*/
+.tabs-wrapper {
+  padding-left: 2rem;
+}
+
+#circle-tabs-menu {
+  border-bottom: none;
+  margin: 0;
+  color: white;
+}
+#circle-tabs-menu .circle-tab {
+  width: 100px;
+  height: 100px;
+  margin-right: 1.5rem;
+  background: #2137d6;
+  background: linear-gradient(32deg, #2137d6 0%, #19b6ec 100%);
+  border-radius: 50%;
+}
+#circle-tabs-menu .circle-tab a {
+  color: white;
+  text-decoration: none;
+}
+#circle-tabs-menu .tab-wrapper {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -785,7 +865,7 @@ footer {
   text-align: right;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   line-height: 60px;
 }
 
@@ -793,7 +873,19 @@ footer {
 ## Page Layout
 --------------------------------------------------------------*/
 .content-section {
-  padding: 4rem 0px;
+  padding: 4rem 0;
+}
+
+.container-lg {
+  max-width: 1140px;
+}
+
+.rmv-padding {
+  padding: 0;
+}
+
+#page {
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------

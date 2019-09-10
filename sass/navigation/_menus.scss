@@ -111,6 +111,9 @@ footer {
   color: white;
 
   .circle-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
     height: 100px;
     margin-right: 1.5rem;
@@ -125,8 +128,20 @@ footer {
   }
 
   .tab-wrapper {
-    height: 100%;
-    width: 100%;
+    height: 97%;
+    width: 97%;
     border-radius: 50%;
+
+    padding: 0 5px;
+    background-color: white;
+
+    .tab-title {
+      color: #9ea2ac;
+      line-height: 23px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 }

@@ -41,7 +41,7 @@
     <div class="row">
 
       <div class="col-6 rmv-padding">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/images/blob-caps-display.png" class="img-fluid" alt="">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/images/blob-caps-display.png" class="hero-product img-fluid" alt="">
       </div>
 
       <div class="col-6">
@@ -52,13 +52,22 @@
           <!-- Circle tabs -->
           <ul class="nav nav-tabs" id="circle-tabs-menu" role="tablist">
             <li class="circle-tab"><a class="tab-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-              <div class="tab-wrapper">hello</div>
+              <div class="tab-wrapper">
+                <!-- <div class="white-circle"></div>
+                <h2 class="tab-title">THC Free</h2> -->
+              </div>
             </a></li>
             <li class="circle-tab"><a class="tab-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-              <div class="tab-wrapper">hello</div>
+              <div class="tab-wrapper">
+                <!-- <div class="white-circle"></div>
+                <h2 class="tab-title">Natural & Pure</h2> -->
+              </div>
             </a></li>
             <li class="circle-tab"><a class="tab-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-              <div class="tab-wrapper">hello</div>
+              <div class="tab-wrapper">
+                <!-- <div class="white-circle"></div>
+                <h2 class="tab-title">USA & Canadian sourced</h2> -->
+              </div>
             </a></li>
           </ul>                     
   

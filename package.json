@@ -1,0 +1,25 @@
+{
+  "name": "wcmcbd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/style.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tristan-Deering/WCM-wp-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tristan-Deering/WCM-wp-theme/issues"
+  },
+  "homepage": "https://github.com/Tristan-Deering/WCM-wp-theme#readme"
+}

@@ -403,6 +403,16 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.section-title {
+  font-size: 38px;
+  font-weight: 500;
+  color: #213055; }
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 26px;
+  color: rgba(33, 38, 51, 0.733); }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -773,32 +783,146 @@ footer {
       font-size: 1.2rem;
       font-weight: 700; }
 
+/* #########################################
+  Section 1
+###########################################*/
 .header-xl {
+  position: relative;
   color: #272c42;
   font-family: 'Montserrat';
   text-align: right;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 80px;
-  line-height: 60px; }
+  line-height: 60px;
+  z-index: 1; }
 
 .hero-product {
-  max-width: 500px; }
+  max-width: 500px;
+  width: 100%; }
+
+.text-slider-wrapper {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px; }
+  .text-slider-wrapper #carousel-content {
+    height: 100%; }
+    .text-slider-wrapper #carousel-content .carousel-indicators li {
+      background: black; }
+    .text-slider-wrapper #carousel-content .carousel-inner {
+      height: 100%; }
+      .text-slider-wrapper #carousel-content .carousel-inner .carousel-item {
+        height: 100%; }
+    .text-slider-wrapper #carousel-content .arrow {
+      color: black; }
+
+/* #########################################
+  Banner Section
+###########################################*/
+.products-banner {
+  padding: 25px 12px;
+  width: 100%;
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background: #1a8fdd;
+  background: linear-gradient(90deg, #1a8fdd 0%, #2a9ddf 100%); }
+  .products-banner .banner-card {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0 5px;
+    color: #faf7f7;
+    text-align: center; }
+    .products-banner .banner-card .product-banner-img-wrapper {
+      width: 50%; }
+      .products-banner .banner-card .product-banner-img-wrapper img {
+        max-width: 170px; }
+    .products-banner .banner-card .product-banner-copy {
+      width: 50%; }
+      .products-banner .banner-card .product-banner-copy .button-white {
+        color: white;
+        padding: 11px 20px;
+        min-height: 42px;
+        font-size: 15px;
+        line-height: 15px;
+        background: transparent;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        -webkit-transition: background-color 200ms, color 200ms;
+        /* Safari prior 6.1 */
+        transition: background-color 200ms, color 200ms; }
+      .products-banner .banner-card .product-banner-copy .button-white:hover {
+        color: black;
+        background: white; }
+
+/* #########################################
+  Cards Section
+###########################################*/
+#card-section .subtitle {
+  max-width: 410px;
+  margin: 15px auto; }
+
+#card-section .row-flex-container {
+  justify-content: space-around; }
+  #card-section .row-flex-container .info-card {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.123), 0 3px 6px rgba(0, 0, 0, 0.164);
+    overflow: hidden; }
+    #card-section .row-flex-container .info-card .card-image {
+      min-height: 180px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    #card-section .row-flex-container .info-card .card-content {
+      padding: 15px;
+      height: 230px; }
+      #card-section .row-flex-container .info-card .card-content .card-title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #1f2535; }
+      #card-section .row-flex-container .info-card .card-content .card-text {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #20283ad2; }
 
 /*--------------------------------------------------------------
 ## Page Layout
 --------------------------------------------------------------*/
-.content-section {
-  padding: 4rem 0; }
+#page {
+  overflow: hidden; }
 
-.container-lg {
-  max-width: 1140px; }
+.content-section {
+  padding: 4rem 25px;
+  max-width: 1190px;
+  margin: 0 auto; }
+
+.banner-section {
+  width: 100%; }
 
 .rmv-padding {
   padding: 0; }
 
-#page {
-  overflow: hidden; }
+.vert-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.row-flex-container {
+  display: flex;
+  flex-direction: row; }
+
+.top-margin {
+  margin-top: 12px; }
+
+.lg-top-margin {
+  margin-top: 40px; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -819,3 +943,12 @@ footer {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+.hemp-1 {
+  background-image: url(assets/images/hemp-1.jpg); }
+
+.hemp-2 {
+  background-image: url(assets/images/hemp-2.jpg);
+  background-position: 50% 15% !important; }
+
+.hemp-3 {
+  background-image: url(assets/images/hemp-3.jpg); }

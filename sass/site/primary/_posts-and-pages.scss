@@ -7,18 +7,39 @@
 ## Page Layout
 --------------------------------------------------------------*/
 
-.content-section {
-  padding: 4rem 0;
+#page {
+  overflow: hidden;
 }
 
-.container-lg {
-  max-width: 1140px;
+.content-section {
+  padding: 4rem 25px;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.banner-section {
+  width: 100%;
 }
 
 .rmv-padding {
   padding: 0;
 }
 
-#page {
-  overflow: hidden;
+.vert-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-margin {
+  margin-top: 12px;
+}
+
+.lg-top-margin {
+  margin-top: 40px;
 }

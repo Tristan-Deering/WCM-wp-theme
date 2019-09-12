@@ -37,49 +37,141 @@
     </div>
   </section>
 
-  <section class="content-section container container-lg">
+  <section class="content-section container">
+    <h2 class="h2-xl header-xl">About</h2>
     <div class="row">
 
       <div class="col-6 rmv-padding">
         <img src="<?php bloginfo('template_directory'); ?>/assets/images/blob-caps-display.png" class="hero-product img-fluid" alt="">
       </div>
 
-      <div class="col-6">
-        <h2 class="h2-xl header-xl">About</h2>
-      
-        <div class="tabs-wrapper">
-
-          <!-- Circle tabs -->
-          <ul class="nav nav-tabs" id="circle-tabs-menu" role="tablist">
-            <li class="circle-tab"><a class="tab-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-              <div class="tab-wrapper">
-                <!-- <div class="white-circle"></div>
-                <h2 class="tab-title">THC Free</h2> -->
+      <div class="col-6 overflow-hidden">
+        <div class="text-slider-wrapper">
+          <div id="carousel-content" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-content" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-content" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <p>lorem ipsum (imagine longer text)</p>
               </div>
-            </a></li>
-            <li class="circle-tab"><a class="tab-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-              <div class="tab-wrapper">
-                <!-- <div class="white-circle"></div>
-                <h2 class="tab-title">Natural & Pure</h2> -->
+              <div class="carousel-item text-center p-4">
+                  <p>lorem ipsum (imagine longer text)</p>
               </div>
-            </a></li>
-            <li class="circle-tab"><a class="tab-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-              <div class="tab-wrapper">
-                <!-- <div class="white-circle"></div>
-                <h2 class="tab-title">USA & Canadian sourced</h2> -->
-              </div>
-            </a></li>
-          </ul>                     
-  
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">..s.</div>
-            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">..d.</div>
+            </div>
+            <!-- <a class="carousel-control-prev" href="#carousel-content" role="button" data-slide="prev">
+              <i class="arrow fas fa-chevron-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-content" role="button" data-slide="next">
+              <i class="arrow fas fa-chevron-right"></i>
+              <span class="sr-only">Next</span>
+            </a> -->
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="banner-section">
+    <div class="products-banner">
+      <div class="banner-card">
+        <div class="product-banner-img-wrapper">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/images/tincture-bundle-r.png" alt="">
+        </div>
+        <div class="product-banner-copy">
+          <h2 class="banner-title">CBD For Pets</h2>
+          <p class="banner-text">
+            Made from pure hemp CBD with full-spec options
+          </p>
+          <div class="top-margin">
+            <button class="button-white">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="banner-card">
+        <div class="product-banner-img-wrapper">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/images/multi-caps.png" alt="">
+        </div>
+        <div class="product-banner-copy">
+          <h2 class="banner-title">CBD For Pets</h2>
+          <p class="banner-text">
+            Made from pure hemp CBD with full-spec options
+          </p>
+          <div class="top-margin">
+            <button class="button-white">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="banner-card">
+        <img class="product-banner-img-wrapper" src="<?php bloginfo('template_directory'); ?>/assets/images/tincture-bundle.png" alt="">
+        <div class="product-banner-copy">
+          <h2 class="banner-title">CBD For Pets</h2>
+          <p class="banner-text">
+            Made from pure hemp CBD with full-spec options
+          </p>
+          <div class="top-margin">
+            <button class="button-white">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="card-section" class="content-section">
+    <div class="vert-flex-container text-center">
+      <h2 class="section-title">Our Key Values</h2>
+      <p class="subtitle top-margin">With a dedicated team of hemp experts, we're here to deliver on the trust and quality you expect.</p>
+      <div class="row-flex-container lg-top-margin">
+        <div class="info-card">
+          <div class="card-image hemp-1"></div>
+          <div class="card-content">
+            <h3 class="card-title">Integrity</h3>
+            <p class="card-text">
+              Crafted by professionals, our oils and capsules are produced to strict 
+              clinical quality standards and always tested for proper potency, quality 
+              and purity that you can trust.
+            </p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="card-image hemp-2"></div>
+          <div class="card-content">
+            <h3 class="card-title">Quality</h3>
+            <p class="card-text">
+              We've teamed up with big brands to give you the most up-to-date knowledge 
+              and customer service we can provide. Contact us today to learn how CBD can 
+              help you.
+              Learn More >
+            </p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="card-image hemp-3"></div>
+          <div class="card-content">
+            <h3 class="card-title">Family</h3>
+            <p class="card-text">
+              Our customers are like family to us, that's why we only use natural
+              ingredients we use at home and are here to help provide a welcoming
+              and fresh environment for your medicinal needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+
+  </section>
+
+  <section class="content-section container">
+
+  </section>
+
+  <section class="container content-section">
+
   </section>
 
 <?php get_footer(); ?> 

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "feather-icons": "^4.24.1"
+  },
   "devDependencies": {
     "node-sass": "^4.12.0"
   },

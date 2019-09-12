@@ -61,20 +61,158 @@
   }
 }
 
+/* #########################################
+  Section 1
+###########################################*/
+
 .header-xl {
+  position: relative;
   color: #272c42;
   font-family: 'Montserrat';
   text-align: right;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 80px;
   line-height: 60px;
+  z-index: 1;
 }
 
 .hero-product {
   max-width: 500px;
+  width: 100%;
 }
 
+.text-slider-wrapper {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
 
+  #carousel-content {
+    height: 100%;
+
+    .carousel-indicators{
+      li {
+        background: black;
+      }
+    }
+
+    .carousel-inner {
+      height: 100%;
+      
+      .carousel-item {
+        height: 100%;
+      }
+    }
+
+    .arrow {
+      color: black;
+    }
+  }
+}
+
+/* #########################################
+  Banner Section
+###########################################*/
+
+.products-banner {
+  padding: 25px 12px;
+  width: 100%;
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background: rgb(26,143,221);
+  background: linear-gradient(90deg, rgba(26,143,221,1) 0%, rgba(42,157,223,1) 100%);
+
+  .banner-card {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0 5px;
+    color: #faf7f7;
+    text-align: center;
+
+    .product-banner-img-wrapper {
+      width: 50%;
+      img {
+        max-width: 170px;
+      }
+    } 
+    .product-banner-copy {
+      width: 50%;
+      
+      .banner-heading {
+
+      }
+      .banner-text {
+
+      }
+      .button-white {
+        color: white;
+        padding: 11px 20px;
+        min-height: 42px;
+        font-size: 15px;
+        line-height: 15px;
+        background: transparent;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        -webkit-transition: background-color 200ms, color 200ms; /* Safari prior 6.1 */
+        transition: background-color 200ms, color 200ms;
+      }
+      .button-white:hover {
+        color: black;
+        background: white;
+      }
+    }
+  }
+}
+
+/* #########################################
+  Cards Section
+###########################################*/
+
+#card-section {
+  .subtitle {
+    max-width: 410px;
+    margin: 15px auto;
+  }
+  
+  .row-flex-container {
+    justify-content: space-around;
+
+    .info-card {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.123), 0 3px 6px rgba(0, 0, 0, 0.164);
+      overflow: hidden;
+
+      .card-image {
+        min-height: 180px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .card-content {
+        padding: 15px;
+        height: 230px;
+
+        .card-title {
+          font-size: 1.4rem;
+          font-weight: 500;
+          letter-spacing: 1px;
+          color: #1f2535;
+        }
+        .card-text {
+          font-size: 1.05rem;
+          font-weight: 500;
+          color: #20283ad2
+        }
+      }
+    }
+  }
+}
 
 

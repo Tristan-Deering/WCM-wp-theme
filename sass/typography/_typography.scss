@@ -13,3 +13,15 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+.section-title {
+	font-size: 38px;
+	font-weight: 500;
+	color: #213055;
+}
+
+.subtitle {
+	font-size: 1rem; 
+	line-height: 26px;
+	color: rgba(33, 38, 51, 0.733);
+}

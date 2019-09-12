@@ -98,7 +98,7 @@
       height: 100%;
 
       .slider-header {
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-weight: 600;
         font-size: 55px;
         line-height: 60px;
@@ -182,8 +182,8 @@
   Cards Section
 ###########################################*/
 
-#card-section {
-  .subtitle {
+.card-section {
+  .section-subtitle {
     max-width: 410px;
     margin: 15px auto;
   }
@@ -219,6 +219,34 @@
           font-weight: 500;
           color: #20283ad2
         }
+      }
+    }
+  }
+}
+
+/* #########################################
+  Banner Section 2
+###########################################*/
+
+#bg-banner {
+  overflow: hidden;
+  margin-top: 60px;
+
+  .banner-wrapper {
+    position: relative;
+    background-image: url(assets/images/stok.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    .banner-content {
+      background-color: rgba(69, 119, 208, 0.26);
+      color: white;
+      padding: 7%;
+      min-height: 500px;
+
+      .subtitle {
+
       }
     }
   }

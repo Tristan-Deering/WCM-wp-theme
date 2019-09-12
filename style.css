@@ -408,7 +408,7 @@ big {
   font-weight: 500;
   color: #213055; }
 
-.subtitle {
+.section-subtitle {
   font-size: 1rem;
   line-height: 26px;
   color: rgba(33, 38, 51, 0.733); }
@@ -811,7 +811,7 @@ footer {
     .text-slider-wrapper #carousel-content .carousel-item {
       height: 100%; }
       .text-slider-wrapper #carousel-content .carousel-item .slider-header {
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-weight: 600;
         font-size: 55px;
         line-height: 60px;
@@ -871,35 +871,53 @@ footer {
 /* #########################################
   Cards Section
 ###########################################*/
-#card-section .subtitle {
+.card-section .section-subtitle {
   max-width: 410px;
   margin: 15px auto; }
 
-#card-section .row-flex-container {
+.card-section .row-flex-container {
   justify-content: space-around; }
-  #card-section .row-flex-container .info-card {
+  .card-section .row-flex-container .info-card {
     max-width: 300px;
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.123), 0 3px 6px rgba(0, 0, 0, 0.164);
     overflow: hidden; }
-    #card-section .row-flex-container .info-card .card-image {
+    .card-section .row-flex-container .info-card .card-image {
       min-height: 180px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
-    #card-section .row-flex-container .info-card .card-content {
+    .card-section .row-flex-container .info-card .card-content {
       padding: 15px;
       height: 230px; }
-      #card-section .row-flex-container .info-card .card-content .card-title {
+      .card-section .row-flex-container .info-card .card-content .card-title {
         font-size: 1.4rem;
         font-weight: 500;
         letter-spacing: 1px;
         color: #1f2535; }
-      #card-section .row-flex-container .info-card .card-content .card-text {
+      .card-section .row-flex-container .info-card .card-content .card-text {
         font-size: 1.05rem;
         font-weight: 500;
         color: #20283ad2; }
+
+/* #########################################
+  Banner Section 2
+###########################################*/
+#bg-banner {
+  overflow: hidden;
+  margin-top: 60px; }
+  #bg-banner .banner-wrapper {
+    position: relative;
+    background-image: url(assets/images/stok.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #bg-banner .banner-wrapper .banner-content {
+      background-color: rgba(69, 119, 208, 0.26);
+      color: white;
+      padding: 7%;
+      min-height: 500px; }
 
 /*--------------------------------------------------------------
 ## Page Layout

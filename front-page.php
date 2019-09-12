@@ -131,10 +131,10 @@
     </div>
   </section>
 
-  <section id="card-section" class="content-section">
+  <section class="card-section content-section">
     <div class="vert-flex-container text-center">
       <h2 class="section-title">Our Key Values</h2>
-      <p class="subtitle top-margin">With a dedicated team of hemp experts, we're here to deliver on the trust and quality you expect.</p>
+      <p class="section-subtitle top-margin">With a dedicated team of hemp experts, we're here to deliver on the trust and quality you expect.</p>
       <div class="row-flex-container lg-top-margin">
         <div class="info-card">
           <div class="card-image hemp-1"></div>
@@ -174,16 +174,69 @@
     </div>
   </section>
 
-  <section class="banner">
-
+  <section id="bg-banner" class="banner">
+    <div class="banner-wrapper">
+      <div class="banner-content">
+        <div class="content-wrapper">
+          <p class="banner-title">Feeling overwhelemed?</p>
+          <h3 class="big">Take a look at our exclusive CBD research hub</h3>
+          <p class="subtitle">Let's talk about how CBD can help you naturally.</p>
+          <button class="button-white">Learn More</button>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="content-section container">
-
+  <section class="card-section content-section">
+    <div class="vert-flex-container text-center">
+      <h2 class="section-title">Stay In The Know</h2>
+      <p class="section-subtitle top-margin">With weekly blog posts covering topics from CBD to new advancements in the hemp industry</p>
+      <div class="row-flex-container lg-top-margin">
+        <div class="info-card">
+          <div class="card-image hemp-1"></div>
+          <div class="card-content">
+            <h3 class="card-title">Integrity</h3>
+            <p class="card-text">
+              Crafted by professionals, our oils and capsules are produced to strict 
+              clinical quality standards and always tested for proper potency, quality 
+              and purity that you can trust.
+            </p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="card-image hemp-2"></div>
+          <div class="card-content">
+            <h3 class="card-title">Quality</h3>
+            <p class="card-text">
+              We've teamed up with big brands to give you the most up-to-date knowledge 
+              and customer service we can provide. Contact us today to learn how CBD can 
+              help you.
+              Learn More >
+            </p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="card-image hemp-3"></div>
+          <div class="card-content">
+            <h3 class="card-title">Family</h3>
+            <p class="card-text">
+              Our customers are like family to us, that's why we only use natural
+              ingredients we use at home and are here to help provide a welcoming
+              and fresh environment for your medicinal needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="container content-section">
-
+  <section class="content-section">
+    <p class="disclaimer text-center container section-subtitle">
+      Representations regarding the efficacy and safety of West Coast Medicinals have not been 
+      evaluated by the Food and Drug Administration. These products are not intended to diagnose, 
+      prevent, treat, or cure any disease. A doctor's advice should be sought before using this and 
+      any supplemental dietary product.
+    </p>
   </section>
 
 <?php get_footer(); ?> 

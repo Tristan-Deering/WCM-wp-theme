@@ -94,15 +94,22 @@
         background: black;
       }
     }
-
-    .carousel-inner {
+    .carousel-item {
       height: 100%;
-      
-      .carousel-item {
-        height: 100%;
+
+      .slider-header {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 60px;
+        text-transform: uppercase;
+      }
+      .slider-text {
+        font-size: 21px;
+        line-height: 35px;
+        color: rgba(33, 38, 51, 0.733);
       }
     }
-
     .arrow {
       color: black;
     }
@@ -126,7 +133,7 @@
   .banner-card {
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     padding: 0 5px;
     color: #faf7f7;
@@ -134,8 +141,10 @@
 
     .product-banner-img-wrapper {
       width: 50%;
+      text-align: center;
+
       img {
-        max-width: 170px;
+        max-width: 160px;
       }
     } 
     .product-banner-copy {

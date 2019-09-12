@@ -53,11 +53,21 @@
               <li data-target="#carousel-content" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active text-center p-4">
-                <p>lorem ipsum (imagine longer text)</p>
+              <div class="carousel-item active p-4">
+               <h2 class="slider-header">THC FREE GUARENTEED</h2> 
+               <p class="slider-text top-margin">
+                Our CBD products are produced to strict clinical quality standards and always tested 
+                for proper potency, quality and purity that you can trust.Click Here to see the latest 
+                test results!
+               </p>
               </div>
-              <div class="carousel-item text-center p-4">
-                  <p>lorem ipsum (imagine longer text)</p>
+              <div class="carousel-item p-4">
+                <h2 class="slider-header">GROWN IN THE USA</h2> 
+                <p class="slider-text top-margin">
+                  West Coast Medicinal's hemp is grown, extracted and sold under the strict guidelines of 
+                  health Canada and AGLC. We are able to safely sell across North America and most international 
+                  countries without any risk.
+                </p>
               </div>
             </div>
             <!-- <a class="carousel-control-prev" href="#carousel-content" role="button" data-slide="prev">
@@ -78,12 +88,12 @@
     <div class="products-banner">
       <div class="banner-card">
         <div class="product-banner-img-wrapper">
-          <img src="<?php bloginfo('template_directory'); ?>/assets/images/tincture-bundle-r.png" alt="">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/images/dog-treats.png" alt="">
         </div>
         <div class="product-banner-copy">
           <h2 class="banner-title">CBD For Pets</h2>
           <p class="banner-text">
-            Made from pure hemp CBD with full-spec options
+            Made with natural ingredients for your puppies health
           </p>
           <div class="top-margin">
             <button class="button-white">Learn More</button>
@@ -95,9 +105,9 @@
           <img src="<?php bloginfo('template_directory'); ?>/assets/images/multi-caps.png" alt="">
         </div>
         <div class="product-banner-copy">
-          <h2 class="banner-title">CBD For Pets</h2>
+          <h2 class="banner-title">CBD Capsules</h2>
           <p class="banner-text">
-            Made from pure hemp CBD with full-spec options
+            CBD capsules guarenteed to be fast acting & bioavailable
           </p>
           <div class="top-margin">
             <button class="button-white">Learn More</button>
@@ -105,11 +115,13 @@
         </div>
       </div>
       <div class="banner-card">
-        <img class="product-banner-img-wrapper" src="<?php bloginfo('template_directory'); ?>/assets/images/tincture-bundle.png" alt="">
+        <div class="product-banner-img-wrapper">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/images/tincture-bundle.png" alt="">
+        </div>
         <div class="product-banner-copy">
-          <h2 class="banner-title">CBD For Pets</h2>
+          <h2 class="banner-title">CBD Tinctures</h2>
           <p class="banner-text">
-            Made from pure hemp CBD with full-spec options
+            Made from pure hemp CBD with full-spectrum options
           </p>
           <div class="top-margin">
             <button class="button-white">Learn More</button>

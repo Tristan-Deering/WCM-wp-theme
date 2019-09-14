@@ -1,1 +1,19 @@
-
+.button-white {
+   color: white;
+   padding: 11px 20px;
+   min-height: 42px;
+   font-size: 15px;
+   line-height: 15px;
+   background: transparent;
+   border-radius: 25px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: white;
+   -webkit-transition: background-color 200ms, color 200ms; /* Safari prior 6.1 */
+   transition: background-color 200ms, color 200ms;
+ }
+ .button-white:hover {
+   color: black;
+   background: white;
+   border-color: white;
+ }

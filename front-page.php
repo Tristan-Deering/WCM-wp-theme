@@ -6,31 +6,33 @@
       <source src="<?php bloginfo('template_directory');?>/assets/images/hero.mp4" type="video/mp4" alt="HTML5 background video">
     </video>
 
-    <div class="hero-nav">
-      <nav class="row align-items-center">
-        <div class="col-4">
-          <div class="nav-circle">
-            <div class="text-block-9"></div>
-          </div>
-          <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle w-inline-block">
-            <div class="instagram"></div>
-          </a>
-          <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle w-inline-block">
-            <div class="facebook"></div>
-          </a>
-        </div>
-        <div class="col-4 text-center">
-          <a href="/">
-            <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" class="d-inline-block align-center img-fluid logo" alt="">
-          </a>
-        </div>
-        <div class="col-4 text-right align-items-center">
-          <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle w-inline-block">
-            <div class="facebook"></div>
-          </a>
-        </div>
-      </nav>
-    </div>
+    <nav class="hero-nav">
+      <div class="hero-nav-wrapper">
+            <div class="home-nav-col">
+              <div class="nav-circle">
+                <div class="text-block-9"><i class="fas fa-bars"></i></div>
+              </div>
+              <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
+                <div class="instagram"><i class="fab fa-facebook-f"></i></div>
+              </a>
+              <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
+                <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+              </a>
+            </div>
+      
+            <div class="home-nav-col justify-content-center">
+              <a href="/">
+                <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" class="d-inline-block align-center img-fluid logo" alt="">
+              </a>
+            </div>
+      
+            <div class="home-nav-col justify-content-end">
+              <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
+                <div class="facebook"><i class="fas fa-shopping-cart"></i></div>
+              </a>
+            </div>
+      </div>
+    </nav>
 
     <div class="center-cta-wrapper text-center">
       <a href="<?php bloginfo('template_directory'); ?>/shop"><button class="hero-cta-button">SHOP NOW</button></a>
@@ -178,8 +180,8 @@
     <div class="banner-wrapper">
       <div class="banner-content">
         <div class="content-wrapper">
-          <p class="banner-title">Feeling overwhelemed?</p>
-          <h3 class="big">Take a look at our exclusive CBD research hub</h3>
+          <p class="banner-title">Feeling overwhelmed?</p>
+          <h3 class="big top-margin">Take a look at our exclusive CBD research hub</h3>
           <p class="subtitle">Let's talk about how CBD can help you naturally.</p>
           <button class="button-white">Learn More</button>
         </div>

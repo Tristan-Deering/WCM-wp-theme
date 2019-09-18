@@ -644,6 +644,60 @@ footer {
           color: #ffffff; }
 
 /* #########################################
+  Fullscreen Nav
+###########################################*/
+#fullscreen-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 50;
+  transition: left .7s;
+  transition-timing-function: ease-in-out;
+  background: #1c76c5;
+  background: linear-gradient(172deg, #1c76c5 10%, #1ca6c9 100%); }
+  #fullscreen-menu.open {
+    left: 0; }
+  #fullscreen-menu .menu-wrapper {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    display: flex;
+    align-items: stretch; }
+    #fullscreen-menu .menu-wrapper .menu {
+      margin-top: 140px;
+      margin-left: 10px;
+      width: 700px; }
+      #fullscreen-menu .menu-wrapper .menu .menu-link {
+        font-family: 'Work Sans';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+        text-decoration: none;
+        color: #e9e9e9; }
+    #fullscreen-menu .menu-wrapper #close-menu {
+      margin: 20px 35px;
+      cursor: pointer;
+      -webkit-transition: -webkit-transform .5s ease-in-out;
+      transition: transform .5s ease-in-out; }
+    #fullscreen-menu .menu-wrapper #close-menu:hover {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  #fullscreen-menu #background-logo {
+    position: absolute;
+    width: 600px;
+    right: 6%;
+    bottom: 8%;
+    opacity: 0.1; }
+
+/* #########################################
   Circle Tabs
 ###########################################*/
 .tabs-wrapper {
@@ -1003,8 +1057,7 @@ footer {
 
 .vert-flex-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  flex-direction: column; }
 
 .row-flex-container {
   display: flex;

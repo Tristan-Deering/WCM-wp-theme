@@ -8,29 +8,29 @@
 
     <nav class="hero-nav">
       <div class="hero-nav-wrapper">
-            <div class="home-nav-col">
-              <div class="nav-circle">
-                <div class="text-block-9"><i class="fas fa-bars"></i></div>
-              </div>
-              <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
-                <div class="instagram"><i class="fab fa-facebook-f"></i></div>
-              </a>
-              <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
-                <div class="facebook"><i class="fab fa-facebook-f"></i></div>
-              </a>
-            </div>
-      
-            <div class="home-nav-col justify-content-center">
-              <a href="/">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" class="d-inline-block align-center img-fluid logo" alt="">
-              </a>
-            </div>
-      
-            <div class="home-nav-col justify-content-end">
-              <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
-                <div class="facebook"><i class="fas fa-shopping-cart"></i></div>
-              </a>
-            </div>
+        <div class="home-nav-col">
+          <div class="nav-circle" id="menu-button">
+            <div><i class="fas fa-bars"></i></div>
+          </div>
+          <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
+            <div class="instagram"><i class="fab fa-facebook-f"></i></div>
+          </a>
+          <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
+            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+          </a>
+        </div>
+  
+        <div class="home-nav-col justify-content-center">
+          <a href="/">
+            <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" class="d-inline-block align-center img-fluid logo" alt="">
+          </a>
+        </div>
+  
+        <div class="home-nav-col justify-content-end">
+          <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
+            <div class="facebook"><i class="fas fa-shopping-cart"></i></div>
+          </a>
+        </div>
       </div>
     </nav>
 

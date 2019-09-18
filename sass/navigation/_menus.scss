@@ -97,6 +97,75 @@ footer {
   }
 }
 
+/* #########################################
+  Fullscreen Nav
+###########################################*/
+
+#fullscreen-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 50;
+  transition: left .7s;
+  transition-timing-function: ease-in-out;
+  background: rgb(28,118,197);
+  background: linear-gradient(172deg, rgba(28,118,197,1) 10%, rgba(28,166,201,1) 100%);
+  
+  &.open {
+    left: 0;
+  }
+  
+  .menu-wrapper {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    display: flex;
+    align-items: stretch;
+
+    .menu {
+      margin-top: 140px;
+      margin-left: 10px;
+      width: 700px;
+
+      .menu-link {
+        font-family: 'Work Sans';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+        text-decoration: none;
+        color: #e9e9e9;
+      }
+    }
+
+    #close-menu {
+      margin: 20px 35px;
+      cursor: pointer;
+      -webkit-transition: -webkit-transform .5s ease-in-out;
+      transition: transform .5s ease-in-out;
+    }
+    #close-menu:hover {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    } 
+  }
+
+  #background-logo {
+    position: absolute;
+    width: 600px;
+    right: 6%;
+    bottom: 8%;
+    opacity: 0.1;
+  }
+}
+  
 
 /* #########################################
   Circle Tabs

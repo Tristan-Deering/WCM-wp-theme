@@ -24,7 +24,31 @@
 <div id="page">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wcmcbd' ); ?></a>
 
-	<?php if ( ! is_front_page() ) : ?>
+		<nav id="fullscreen-menu">
+			<div class="menu-wrapper">
+					<div class="nav-circle">
+            <div id="close-menu"><i class="fas fa-times"></i></div>
+					</div>
+					<div class="menu row">
+						<div class="col vert-flex-container">
+							<a href="/" class="menu-link">Home</a>
+							<a href="/" class="menu-link">Store</a>
+							<a href="/" class="menu-link">About Us</a>
+							<a href="/" class="menu-link">CBD Science</a>
+							<a href="/" class="menu-link">Wholesale</a>
+						</div>
+						<div class="col vert-flex-container">
+							<a href="/" class="menu-link">News</a>
+							<a href="/" class="menu-link">FAQ</a>
+							<a href="/" class="menu-link">Contact Us</a>
+							<a href="/" class="menu-link">My Account</a>
+						</div>
+					</div>
+					<img id="background-logo" src="<?php blogInfo('template_directory'); ?>/assets/images/whiteleaf-logo.png" alt="wcmcbd logo">
+			</div>
+		</nav>
+
+		<?php if ( ! is_front_page() ) : ?>
 		<nav id="main-nav">
 			<div class="container">
 				<div class="row">
@@ -68,4 +92,4 @@
 				</div>
 			</div>
 		</section>
-	<?php endif; ?>
+		<?php endif; ?>

@@ -26,9 +26,7 @@
 
 		<nav id="fullscreen-menu">
 			<div class="menu-wrapper">
-					<div class="nav-circle">
-            <div id="close-menu"><i class="fas fa-times"></i></div>
-					</div>
+					<div id="close-menu"><i class="fas fa-times"></i></div>
 					<div class="menu row">
 						<div class="col vert-flex-container">
 							<a href="/" class="menu-link">Home</a>
@@ -44,42 +42,62 @@
 							<a href="/" class="menu-link">My Account</a>
 						</div>
 					</div>
+					<?php 
+						// wp_nav_menu( array(
+						// 	'theme_location' => 'menu-1',
+						// 	'menu_class' => 'top-menu'
+						// ) ); 
+					?>
 					<img id="background-logo" src="<?php blogInfo('template_directory'); ?>/assets/images/whiteleaf-logo.png" alt="wcmcbd logo">
 			</div>
 		</nav>
 
 		<?php if ( ! is_front_page() ) : ?>
 		<nav id="main-nav">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex align-items-center justify-content-between">
+			<div class="row">
 
-						<a class="brand" href="<?php bloginfo('url') ?>">
-							<img src="<?php bloginfo('template_directory');?>/assets/images/logo.png ?>" class="img-fluid logo">
-						</a>
-
-						<?php wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_class' => 'top-menu d-flex'
-						) ); 
-						?>
-						
+				<div class="col">
+					<div class="nav-circle" id="menu-button">
+            <i class="fas fa-bars"></i>
 					</div>
-				</div><!-- #site-navigation -->
+					<a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
+            <div class="instagram"><i class="fas fa-user"></i></div>
+          </a>
+				</div>
+
+				<div class="col d-flex align-items-center justify-content-center">
+					<a class="brand" href="<?php bloginfo('url') ?>">
+						<img src="<?php bloginfo('template_directory');?>/assets/images/white-logo-text.png ?>" class="img-fluid logo">
+					</a>
+				</div>
+
+				<div class="col justify-content-end">
+					<?php // if ( function_exists( 'wcmcbd_woocommerce_header_cart' ) ) {
+								// 	wcmcbd_woocommerce_header_cart();
+								// } 
+							?> 
+
+          <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
+            <div class="instagram"><i class="fab fa-instagram"></i></div>
+          </a>
+          <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
+            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+          </a>
+				</div>
+
 			</div>
 		</nav>
 
-		<section id="breadcrumbs" class="container">
+		<!-- <section id="breadcrumbs">
 			<div class="container container-big">
 				<div class="row d-inline-block">
 
-					<!-- if its a page -->
 					<?php if ( is_home() || is_shop() ) : ?>
 
 						<span class="col">Home</span>
-						<span class="col">page</span>
+						<i class="fas fa-chevron-right"></i>
+						<span class="col"><?php echo get_the_title(); ?></span>
 
-					<!-- if its a post -->
 					<?php elseif ( is_single() ) :  ?>
 
 						<span class="col">Home</span>
@@ -91,5 +109,5 @@
 
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<?php endif; ?>

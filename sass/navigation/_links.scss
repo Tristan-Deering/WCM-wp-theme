@@ -16,4 +16,39 @@
    color: black;
    background: white;
    border-color: white;
- }
+}
+
+
+.nav-circle {
+  font-size: 1.6rem;
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 16px; 
+  
+  
+  i {
+    color: #2b93e7;
+  }
+}
+.white-circle {
+  font-size: 1.6rem;
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 16px; 
+
+  i {
+    color: #2b93e7;;
+  }
+}

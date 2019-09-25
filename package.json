@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass": "node-sass sass/style.scss style.css --watch"
+    "sass": "node-sass sass/style.scss style.css --watch",
+    "wc-sass": "node-sass sass/woocommerce.scss woocommerce.css --watch"
   },
   "repository": {
     "type": "git",

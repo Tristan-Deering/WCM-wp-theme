@@ -4,39 +4,76 @@
 
 #main-nav {
   position: relative;
-  height: 80px;
+  height: 115px;
   width: 100%;
-  padding: 20px;
+  padding: 0 15px;
   background: rgb(19,64,214);
-  background: linear-gradient(81deg, rgba(19,64,214,1) 0%, rgba(76,189,255,1) 100%);
+  background: linear-gradient(300deg, rgb(10, 54, 196) 0%, #29ABE2 100%);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     
   .logo {
-    width: 150px;
+    width: 200px;
   }
+  .row {
+    height: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
 
+    .col {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+}
 
-  .top-menu {
-    // @media screen and (min-width:992px) {
-    // }
+  /* #########################################
+    top-menu
+###########################################*/
 
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15px;
+
+  ul {
     list-style-type: none;
+    list-style: none;
+    list-style-image: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
     li {
+      float: left;
+
       a {
         display: block;
-        padding: 0 1rem;
+        padding: 0 0.6rem;
         color: rgba(255, 255, 255, 0.808);
         text-decoration: none;
-      }
-      a:hover {
-        color: #fff;
       }
     }
   }
 }
+
+  /* #########################################
+    breadcrumbs
+###########################################*/
+
+#breadcrumbs {
+  padding: 28px 10px;
+  background-color: white;
+
+}
+
 
 /* #########################################
   Footer
@@ -68,12 +105,12 @@ footer {
     }
 
     .lower-footer {
-      margin-top: 35px;
+      margin-top: 15px;
 
       .footer-menu {
         display: flex;
         flex-direction: column;
-        padding: 25px;
+        padding: 0 25px;
 
         .link-heading {
           padding: 12px 0;
@@ -130,7 +167,7 @@ footer {
 
     .menu {
       margin-top: 140px;
-      margin-left: 10px;
+      margin-left: 80px;
       width: 700px;
 
       .menu-link {
@@ -146,10 +183,11 @@ footer {
     }
 
     #close-menu {
-      margin: 20px 35px;
+      position: absolute;
+      margin: 35px;
       cursor: pointer;
       -webkit-transition: -webkit-transform .5s ease-in-out;
-      transition: transform .5s ease-in-out;
+      transition: transform .5s ease-in-out; 
     }
     #close-menu:hover {
       -webkit-transform: rotate(180deg);

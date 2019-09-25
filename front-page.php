@@ -13,10 +13,7 @@
             <div><i class="fas fa-bars"></i></div>
           </div>
           <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
-            <div class="instagram"><i class="fab fa-facebook-f"></i></div>
-          </a>
-          <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
-            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+            <div class="instagram"><i class="fas fa-user"></i></div>
           </a>
         </div>
   
@@ -27,8 +24,11 @@
         </div>
   
         <div class="home-nav-col justify-content-end">
+          <a href="https://www.instagram.com/wcmcbd/" target="_blank" class="nav-circle">
+            <div class="instagram"><i class="fab fa-instagram"></i></div>
+          </a>
           <a href="https://www.facebook.com/WCMCBD" target="_blank" class="nav-circle">
-            <div class="facebook"><i class="fas fa-shopping-cart"></i></div>
+            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
           </a>
         </div>
       </div>
@@ -194,40 +194,33 @@
       <h2 class="section-title">Stay In The Know</h2>
       <p class="section-subtitle top-margin">With weekly blog posts covering topics from CBD to new advancements in the hemp industry</p>
       <div class="row-flex-container lg-top-margin">
-        <div class="info-card">
-          <div class="card-image hemp-1"></div>
-          <div class="card-content">
-            <h3 class="card-title">Integrity</h3>
-            <p class="card-text">
-              Crafted by professionals, our oils and capsules are produced to strict 
-              clinical quality standards and always tested for proper potency, quality 
-              and purity that you can trust.
-            </p>
+    
+      <?php 
+        // the query
+        $the_query = new WP_Query( array(
+            'posts_per_page' => 3
+        )); 
+      ?>
+      <?php if ( $the_query->have_posts() ) : ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          
+          <div class="info-card">
+            <div class="card-image"><?php the_post_thumbnail('category-thumbnail'); ?></div>
+            <div class="card-content">
+              <h3 class="card-title">
+                <?php the_title(); ?>
+              </h3>
+              <p class="card-text">
+                <?php the_excerpt(); ?>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="info-card">
-          <div class="card-image hemp-2"></div>
-          <div class="card-content">
-            <h3 class="card-title">Quality</h3>
-            <p class="card-text">
-              We've teamed up with big brands to give you the most up-to-date knowledge 
-              and customer service we can provide. Contact us today to learn how CBD can 
-              help you.
-              Learn More >
-            </p>
-          </div>
-        </div>
-        <div class="info-card">
-          <div class="card-image hemp-3"></div>
-          <div class="card-content">
-            <h3 class="card-title">Family</h3>
-            <p class="card-text">
-              Our customers are like family to us, that's why we only use natural
-              ingredients we use at home and are here to help provide a welcoming
-              and fresh environment for your medicinal needs.
-            </p>
-          </div>
-        </div>
+
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+      
+      <?php endif; ?>
+
       </div>
     </div>
   </section>

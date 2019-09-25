@@ -69,23 +69,6 @@
         display: flex;
         align-items: center;
         width: 100%;
-  
-        .nav-circle {
-          font-size: 1.6rem;
-          width: 56px;
-          height: 56px;
-          background-color: #1b90e9;
-          border-radius: 50%;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center; 
-          margin: 0 16px; 
-  
-          i {
-            color: white;
-          }
-        }
       }
     }
     .logo {
